@@ -74,7 +74,6 @@ a.active, a:hover {
     label.logo{
         font-size: 30px;
         padding-left: 50px;
-
     }
     nav ul li a{
         font-size: 16px;
@@ -84,6 +83,10 @@ a.active, a:hover {
 @media (max-width: 858px){
     .checkbtn{
         display: block;
+    }
+    label.logo{
+        font-size: 20px;
+        width: 50%;
     }
     ul{
         position: fixed;
