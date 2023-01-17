@@ -1,25 +1,31 @@
 
 @font-face {
-    font-family: 'ka1';
-        src: url('ka1.ttf') format('truetype');
+    font-family: 'lemon';
+        src: url('LEMONMILK-Regular.otf') format('truetype');
 }
-    
+
 *  {
         padding: 0;
         margin: 0;
         text-decoration: none;
         list-style: none;
         box-sizing: border-box;
+        font-family: 'lemon', Arial, sans-serif;
 }
 
 body {
     background-color: #000408;
-    font-family: 'ka1', Arial, sans-serif;
-    color: #986244;
+    color: #fff;
+}
+
+.content{
+    margin: 5%;
 }
 
 .about{
-    background: #404040;
+    padding-top: 80px; 
+    padding-bottom: 20px;
+   
 }
 
 nav {
@@ -131,7 +137,6 @@ footer{
     background: #111;
     height: auto;
     width: auto;
-    font-family: "Open Sans";
     padding-top: 40px;
     color: #fff;
 }
