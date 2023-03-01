@@ -25,19 +25,22 @@ a:hover{
 #logo{
     font-size: 1.5rem;
     font-weight: bold;
+    color:#986244;
 }
 
 #nav{
-    position: fixed;
+
     box-sizing: border-box; /* para não somar o 70 com o 1rem */
     height: 70px;
+    width: 100%;
     padding: 1rem;
     display: flex; /* Por os elementos lado a lado */
     align-items: center;
     justify-content: space-between; /* espaçamento entre os itens */
     background: #fff;
-    width: 100%;
+    position: fixed;
 }
+
 
 #menu{
     display: flex;
@@ -55,7 +58,12 @@ a:hover{
 
 /* Content */
 
+.twitter-tweet{
+   float: right;
+}
+
 .content{
+    padding-top: 2.5rem;
     margin: 3%;
 }
 
@@ -130,13 +138,30 @@ footer{
 /* Responsividade */
 
 @media (max-width: 600px){ 
-    #btn-mobile{
-        display: block;
-    }
     #menu{
-        display: none;
+      display: block; /* O display nao pode ser "none", para que ocorra a transicao o elemento ja deve existir */
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      transition: .5s;
+      z-index: 1000; /* Para garantir que ficara por cima dos outros elementos */
+      height: 0;
+      visibility: hidden; /* deixar o menu "escondido" */
+      overflow-y: hidden; /* esconder os elementos enquanto nao tem a altura  */
+      background: rgb(110, 88, 88);
     }
     #nav.active #menu{
-        display: flex;
+        height: calc(100vh - 70px); /* Tirar a "sobra" // efeito da tela aumentando*/
+        visibility: visible;
+        overflow-y: auto; /* para criar uma barra de scroll caso os itens ultrapassem a parte de baixo */
+    }
+    #menu a{
+        padding: 1rem 0;
+        margin: 0 1rem;
+        border: 2px solid rgba(0, 0, 0, .05);
+    }
+    #btn-mobile{
+        display: block;
     }
 }
