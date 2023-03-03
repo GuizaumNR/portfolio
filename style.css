@@ -162,6 +162,40 @@ footer{
         border: 2px solid rgba(0, 0, 0, .05);
     }
     #btn-mobile{
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    #hamburger{
         display: block;
+        color: #986244;
+        border-top: 2px solid;
+        width: 20px;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display:block;
+        width: 20px;
+        height: 2px;
+        background: currentColor; /* tipo uma variavel que guarda o valor do #hamburger */
+        margin-top: 5px;
+        transition: .5s;
+        position: relative; /*para o "top" abaixo funcionar */
+    }
+
+    #nav.active #hamburger{ /* Criando o X */
+        border-top-color: transparent;
+    }
+    #nav.active #hamburger::before{
+        transform: rotate(135deg); /* para virar o tracinho completando a rotacão */
+    }
+    #nav.active #hamburger::after{
+    transform: rotate(-135deg);
+    top: -7px;
+
     }
 }
