@@ -375,7 +375,7 @@
            <div class="column right" data-aos="fade-up">
               <div class="text">Fale comigo</div>
 
-              <form method="POST" action="https://formsubmit.co/76faf660f5808cc45c98a22c5eca2704" class="input-area">
+              <form id="meuFormulario" method="POST" action="https://formsubmit.co/76faf660f5808cc45c98a22c5eca2704" class="input-area">
                 <div class="fields">
                   <div class="field name">
                     <input type="text" name="nome" placeholder="Nome" required>
@@ -391,7 +391,7 @@
                   <textarea cols="30" rows="10" name="mensagem" placeholder="Mensagem" required></textarea>
                 </div>
                 <div class="button">
-                  <button type="submit">Enviar</button> 
+                  <button type="button" onclick="enviarFormulario()">Enviar</button> 
                 </div> 
                 <input type="hidden" name="_subject" value="New submission!">
               </form>
@@ -408,6 +408,13 @@
     <span>Desenvolvido por <a href="#">Guilherme Rodrigues</a> | <span class="far fa-copyright"></span><span> 2024 todos os direitos reservados</span>
   </footer>
 
+  <script>
+    function enviarFormulario() {
+      var formulario = document.getElementById('meuFormulario');
+      // Envie o formulário
+      formulario.submit();
+    }
+  </script>
 
   <!--- SCROLL UP --->
   <a href="#" class="scrollup" id="scroll-up">
