@@ -16,15 +16,14 @@ html {
 /* ============= VARIABLES CSS ============= */
 :root {
   --first-color: rgb(120, 0, 36);
-  --color-purple-light: rgb(158, 26, 55);
+  --color-red-light: rgb(158, 26, 55);
   --color-white-pink: rgb(255, 86, 117);
   --clean-white-purple: rgb(252, 232, 232);
-  --text-color-light: rgb(159, 122, 125);
-  --scroll-thumb-color: rgb(161, 151, 180);
-  --scroll-bar-color: rgb(188, 181, 201);
+  --scroll-bar-color: rgb(201, 181, 181);
   --clean-light-gray: rgb(189, 189, 189);
   --color-clean-white:rgb(241, 239, 239);
   --color-white: rgb(255, 255, 255);
+  --color-gray: rgb(24, 24, 24);
   --color-black: rgb(24, 22, 22);
   --color-black-clean: rgb(33, 33, 33);
 }
@@ -90,7 +89,7 @@ html {
 }
 
 .nav-bar .menu li a:hover {
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
 }
 
 /* script js sticky */
@@ -114,7 +113,7 @@ html {
 /* ============= HOME SECTION ============= */
 .home {
   display: flex;
-  background: url("/src/img/img-projects/banner-bg1.jpg") top no-repeat;
+  background: url("/src/img/img-content/banner-bg1.jpg") top no-repeat;
   background-size: cover;
   background-color: var(--color-black);
   color: var(--color-white);
@@ -159,7 +158,7 @@ html {
 }
 
 .home .home-content .text-3 span {
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
   font-weight: 500;
 }
 
@@ -181,7 +180,7 @@ html {
 .social-media a:hover i {
   transform: translateY(-3px);
   transition: all 0.5s ease;
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
 }
 
 
@@ -321,7 +320,7 @@ section .title::after {
 .services .title::after {
   background: var(--color-black);
   content: "o que forneço";
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
   white-space: nowrap;
 }
 
@@ -340,7 +339,7 @@ section .title::after {
 
 .services .serv-content .card:hover {
   transform: scale(1.05) translateY(-5px);
-  border: 2px solid var(--color-purple-light);
+  border: 2px solid var(--color-red-light);
 }
 
 .services .serv-content .card .box {
@@ -350,7 +349,7 @@ section .title::after {
 
 .services .serv-content .card i {
   font-size: 32px;
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
   transition: color 0.3s ease;
 }
 
@@ -456,7 +455,7 @@ section .title::after {
 
 .conquest .title::after {
   content: "certificados";
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
   background: var(--color-black);
   white-space: nowrap;
 }
@@ -471,7 +470,7 @@ section .title::after {
 }
 
 .conquest .carousel .card:hover {
-  border: 2px solid var(--color-purple-light);
+  border: 2px solid var(--color-red-light);
 }
 
 .conquest .carousel .card .box {
@@ -502,7 +501,7 @@ section .title::after {
   margin: 0 5px;
   outline: none !important;
   border-radius: 50%;
-  border: 2px solid var(--color-purple-light) !important;
+  border: 2px solid var(--color-red-light) !important;
   transition: all 0.3s ease;
 }
 
@@ -513,7 +512,7 @@ section .title::after {
 
 .owl-dot.active,
 .owl-dot:hover {
-  background: var(--color-purple-light) !important;
+  background: var(--color-red-light) !important;
 }
 
 
@@ -607,7 +606,7 @@ section .title::after {
 /* ============= CONTACT SECTION ============= */
 .contact .title::after {
   content: "mensagem";
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
   background: var(--color-black);
   white-space: nowrap;
 }
@@ -620,7 +619,7 @@ section .title::after {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
 }
 
 .contact .contact-content .left p {
@@ -647,7 +646,7 @@ section .title::after {
 
 .contact .contact-content .row i {
   font-size: 20px;
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
 }
 
 .contact .contact-content .info .head {
@@ -661,7 +660,7 @@ section .title::after {
 .contact .contact-content .input-area input:focus,
 .contact .contact-content .input-area textarea:focus,
 .contact .contact-content .input-area input.active {
-  border: 2px solid var(--color-purple-light);
+  border: 2px solid var(--color-red-light);
 }
 
 
@@ -720,8 +719,8 @@ section .title::after {
 .contact .right form .button button {
   width: 100%;
   height: 100%;
-  border: 2px solid var(--color-purple-light);
-  background: var(--color-purple-light);
+  border: 2px solid var(--color-red-light);
+  background: var(--color-red-light);
   color: var(--color-white);
   font-size: 20px;
   font-weight: 500;
@@ -745,7 +744,7 @@ footer {
 }
 
 footer span a {
-  color: var(--color-purple-light);
+  color: var(--color-red-light);
   text-decoration: none;
 
 }
