@@ -36,8 +36,8 @@ $(document).ready(function () {
     strings: [
       'Técnico em Informática',
       'Desenvolvedor Web',
+      'Desenvolvedor Front-End',
       'Desenvolvedor Back-End',
-      'Apaixonado por Games',
     ],
     typeSpeed: 100,
     backSpeed: 60,

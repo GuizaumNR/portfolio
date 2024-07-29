@@ -108,6 +108,16 @@ html {
   cursor: pointer;
   display: none;
 }
+.menu-btn {
+  color: var(--color-white);
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-btn-light {
+  display: none;
+}
 
 
 /* ============= HOME SECTION ============= */
@@ -142,24 +152,24 @@ html {
   margin: auto 0 auto 40px;
 }
 
-.home .home-content .text-1 {
-  font-size: 27px;
+.hero-text {
+  max-width: 600px;
 }
 
-.home .home-content .text-2 {
-  font-size: 55px;
-  font-weight: 600;
-  margin-left: -5px;
+.hero-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: var(--color-white);
 }
 
-.home .home-content .text-3 {
-  font-size: 36px;
-  margin: 6px 0;
+.hero-text h1 span {
+  color: var(--color-red-light); /* Cor amarela */
 }
 
-.home .home-content .text-3 span {
-  color: var(--color-red-light);
-  font-weight: 500;
+.hero-text p {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: var(--color-white);
 }
 
 /* social media icons  */
