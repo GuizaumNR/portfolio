@@ -748,13 +748,13 @@ footer {
 }
 
 footer span a {
-  color: var(--color-red-light);
+  color: var(--color-white);
   text-decoration: none;
-
 }
 
 footer span a:hover {
-  text-decoration: underline;
+  text-decoration: none;
+  color: var(--color-red-light);
 }
 
 
