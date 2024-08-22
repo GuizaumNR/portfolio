@@ -69,16 +69,6 @@ $(document).ready(function () {
   });
 });
 
-//popup certificates
-$(document).ready(function() {
-  $('.card img').magnificPopup({
-    type: 'image',
-    gallery: {
-      enabled: true
-    }
-  });
-});
-
 //PORTFOLIO SWIPER
 var swiper = new Swiper(".mySwiper", {
   cssMode: true,

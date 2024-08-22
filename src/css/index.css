@@ -108,12 +108,6 @@ html {
   cursor: pointer;
   display: none;
 }
-.menu-btn {
-  color: var(--color-white);
-  font-size: 23px;
-  cursor: pointer;
-  display: none;
-}
 
 .menu-btn-light {
   display: none;
