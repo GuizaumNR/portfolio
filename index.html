@@ -1,477 +1,428 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Olá, me chamo Guilherme, sou um Desenvolvedor Web Front-End, sejam muito Bem-Vindos ao meu Portfólio!">
-
-  <link rel="icon" type="image/png" href="./src/img/img-content/icon.png"/>
-  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-  <link rel="stylesheet" href="./src/css/swiper-bundle.min.css"/>
-  <link rel="stylesheet" href="./src/css/index.css">
-  <link rel="stylesheet" href="./src/css/responsive.css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="./src/js/jquery.magnific-popup.js"></script>
-
-  <title>Guilherme Rodrigues</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Guilherme Rodrigues - Desenvolvedor Full Stack">
+    <title>Guilherme Rodrigues | Desenvolvedor Full Stack</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-  <header class="header-content">
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
 
-    <!--- MENU NAVBAR --->
-    <nav class="nav-bar">
-      <div class="max-width">
-        <div class="logo">
-          <a href="#">Portfo<span>lio</span></a>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">
+                    <a href="#home">GR.</a>
+                </div>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#projetos" class="nav-link">Projetos</a></li>
+                    <li><a href="#experiencia" class="nav-link">Experiência</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
         </div>
+    </header>
 
-        <ul class="menu">
-          <li><a href="#home" class="menu-btn">Início</a></li>
-          <li><a href="#about" class="menu-btn">Sobre mim</a></li>
-          <li><a href="#services" class="menu-btn">Serviços</a></li>
-          <li><a href="#skills" class="menu-btn">Habilidades</a></li>
-          <li><a href="#certificates" class="menu-btn">Conquistas</a></li>
-          <li><a href="#projects" class="menu-btn">Projetos</a></li>
-          <li><a href="#contact" class="menu-btn">Contato</a></li>
-        </ul>
-
-        <!-- icon menu responsive -->
-        <div class="menu-btn-light hidden">
-          <i class="fa fa-moon"></i>
-        </div>
-        <div class="menu-btn">
-          <i class="fa fa-bars"></i>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  
-  <main class="main-content">
-
-    <!--- HOME SECTION --->
-    <section class="home section" id="home">
-      <div class="max-width">
-        <div class="home-content">
-          <div class="home-icon">
-            <img src="./src/img/img-content/guilherme-front.png" alt="ícone imagem principal">
-          </div>
-          <div class="hero-text">
-            <h1>Transforme Seu Negócio Digital com um <br><span class="typing"></span></h1>
-            <p>Olá! Sou Guilherme Rodrigues, um desenvolvedor altamente qualificado com especialidade em Java, MySQL, HTML, CSS e JavaScript. Estou pronto para levar seu projeto ao próximo nível.
-               Entre em contato e descubra como posso ajudar seu negócio a prosperar!</p>              
-          </div>
-        </div>
-        <div class="social-media">
-          <a href="https://github.com/GuizaumNR" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.linkedin.com/in/guizaumnr" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="https://www.instagram.com/gui_snr/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://twitter.com/guizaumNR" target="_blank"><i class="fa-brands fa-twitter"></i></a>
-        </div>
-      </div>
-    </section>
-
-
-    <!--- ABOUT SECTION --->
-    <section class="about section" id="about" aria-label="uma seção falando sobre mim e a minha história na programação.">
-      <div class="max-width" data-aos="fade-down">
-        <h2 class="title">Sobre Mim</h2>
-
-        <div class="about-content">
-          <div class="column left">
-            <img src="./src/img/img-content/guilherme-profile.png" alt="imagem pessoal Guilherme Rodrigues">
-          </div>
-
-          <div class="column right">
-            <div class="text">
-              Me chamo Guilherme e sou um <span>Técnico em Informática</span>
+    <main>
+        <section id="home" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        <span class="line">Olá, eu sou</span>
+                        <span class="highlight">Guilherme Rodrigues</span>
+                    </h1>
+                    <h2 class="hero-subtitle"><span class="typing"></span></h2>
+                    <p class="hero-description">
+                        Transformando ideias em experiências digitais excepcionais com código limpo e design intuitivo.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contato" class="btn btn-secondary">Fale Comigo</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-wrapper">
+                        <img src="src/img/img-content/guilherme-front.png" alt="Guilherme Rodrigues" />
+                        <div class="floating-tech tech-1"><i class="fab fa-java"></i></div>
+                        <div class="floating-tech tech-2"><i class="fab fa-js"></i></div>
+                        <div class="floating-tech tech-3"><i class="fa-solid fa-database"></i></div>
+                    </div>
+                </div>
             </div>
-
-              <p >
-                Olá, pessoal! Meu nome é Guilherme Rodrigues, e fico muito feliz por você estar aqui. Seja muito bem-vindo!
+            <div class="scroll-indicator">
                 <br>
-                Me formei como Técnico em Informática para Internet pelo IFSul em 2022 e, desde então, venho focando no desenvolvimento da minha 
-                carreira como desenvolvedor. Atualmente, estou cursando Engenharia de Software, o que tem ampliado ainda mais meu conhecimento e me permitido explorar novas áreas dentro do desenvolvimento.
-                <br>
-                Sou movido por uma busca constante por aprendizado, que inclui estudos autodidatas, participação em cursos e o uso de recursos online para me aperfeiçoar. 
-                Minhas principais características são a comunicação eficaz, adaptabilidade e habilidade em resolver problemas, qualidades que aplico em todos os desafios que enfrento.
-                <br>
-                No momento, estou em busca de clientes e oportunidades que me permitam não só aprimorar minhas habilidades e enriquecer meu portfólio, mas também contribuir positivamente 
-                para o sucesso de cada projeto em que estiver envolvido.
-            </p>
-
-            <br>
-
-            <a href=https://drive.google.com/file/d/1pjYI3mkAtNynxrBsI4Mq6WJ3YH8lTjBH/view?usp=drive_link"
-              download target="_blank">Download CV <i class="uil uil-file-download"></i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    
-    <!--- SERVICES SECTION --->
-    <section class="services section" id="services" aria-label="uma seção falando dos meus serviços que eu ofereço.">
-      <div id="particles-js"></div>
-      <div class="max-width">
-        <div data-aos="fade-down">
-          <h2 class="title">Serviços</h2>
-        </div>
-
-        <div class="serv-content" data-aos="zoom-in-up">
-          <div class="card">
-            <div class="box">
-              <i class="fa-solid fa-wand-magic-sparkles"></i>
-              <div class="text">Front-End</div>
-                <p>
-                  Ofereço serviços especializados na concepção de layouts que aliam funcionalidade e estética, 
-                  sendo totalmente adaptados às necessidades exclusivas de cada cliente.
-                  Com uma abordagem centrada no usuário, assegurando uma experiência de navegação intuitiva e agradável.
-   
-                </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="box">
-              <i class="fa-solid fa-laptop-code"></i>
-              <div class="text">Back-End</div>
-              <p>
-                Crio soluções robustas e seguras, buscando incessantemente otimização e eficácia para garantir uma experiência sólida e confiável aos usuários. 
-                Meu objetivo é criar soluções que oferecem não apenas funcionalidade, mas também uma interação intuitiva e satisfatória.
-              </p>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="box">
-              <i class="fas fa-code"></i>
-              <div class="text">Programação Web</div>
-                <p>
-                  Com habilidades em Front-end e Back-end, 
-                  meu objetivo é transformar sites em soluções eficientes e de alta performance, garantindo experiências excepcionais para os usuários.
-                </p>
-              </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!--- SKILLS SECTION --->
-    <section class="skills" id="skills" aria-label="uma seção falando das minhas habilidades e estudos até o momento.">
-      <div class="max-width" data-aos="fade-down">
-        <h2 class="title">Habilidades</h2>
-
-        <div class="skills-content">
-          <div class="column left">
-            <div class="text">Minhas habilidades criativas e experiências</div>
-            <p>
-              Tenho construído minha trajetória como freelancer com foco no desenvolvimento de sistemas personalizados e eficientes. 
-              Meu trabalho é guiado pelo domínio de tecnologias como Java e MySQL, garantindo a criação de funcionalidades robustas e o gerenciamento eficiente de dados.
-              <br>  
-              Paralelamente, continuo aprofundando meus conhecimentos em HTML, CSS, JavaScript e Unity, ampliando minhas habilidades e explorando novas possibilidades no 
-              desenvolvimento de software.  
-              Estou sempre em busca de desafios que me permitam aplicar e expandir minhas habilidades em projetos inovadores, mantendo o compromisso com a entrega de soluções de alta qualidade.
-            </p>
-          </div>
-
-          <div class="column right">
-            <div class="bars">
-              <div class="info">
-                <span>Java</span>
-                <span>80%</span>        
-             </div> 
-             <div class="line java"></div>   
-            </div>
-
-            <div class="bars">
-              <div class="info">
-                <span>HTML</span>
-                <span>70%</span>    
-              </div>   
-              <div class="line html"></div>        
-            </div>
-
-            <div class="bars">
-              <div class="info">
-                <span>MySql</span>
-                <span>60%</span>
-             </div>  
-              <div class="line mysql"></div>          
-            </div>
-
-            <div class="bars">
-              <div class="info">
-                <span>Css</span>
-                <span>50%</span>               
-              </div>
-              <div class="line css"></div>                        
-            </div>
-
-            <div class="bars">
-              <div class="info">
-                <span>JavaScript</span>
-                <span>25%</span>              
-              </div>
-              <div class="line js"></div>
-           </div>
-
-            <div class="bars">
-              <div class="info">
-                <span>Unity</span>
-                <span>15%</span>              
-              </div>
-              <div class="line unity"></div>
-           </div>
-          </div>
-        </div> 
-      </div>
-    </section> 
-
-
-    <!--- CERTIFICATES SECTION --->
-    <section class="conquest section" id="certificates" aria-label="uma seção mostrando os meus certificados do meu aprendizado.">
-      <div class="max-width" data-aos="fade-down">
-        <div>
-          <h2 class="title">Minhas Conquistas</h2>
-        </div>
-
-        <div class="carousel owl-carousel">
-          <div class="card">
-            <img src="./src/img/img-certificates/certificadoProduct.jpg" alt="Certificado Design de Produto">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificadoGemini.jpg" alt="Certificado Imersão Google Gemini">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificadoIa.jpeg" alt="Certificado IA">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-tecnico-iot2.jpg" alt="Certificado Técnico IOT2">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-tcpip-basico.jpg" alt="Certificado TCP/IP Básico">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-tcpip-intermediario.jpg" alt="Certificado TCP/IP Intermediário">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-tcpip-avancado.jpg" alt="Certificado TCP/IP Avançado">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-ping.jpg" alt="Certificado Ping">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-ifsul.png" alt="Certificado Técnico em Informática para Internet">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-semana-academica.png" alt="Certificado semana acad">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-design-mobile.png" alt="Certificado em Design Mobile">
-          </div>
-
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-logica-lego.png" alt="Certificado em Lógica">
-          </div>
-          
-          <div class="card">
-            <img src="./src/img/img-certificates/certificado-flesk.png" alt="Certificado em Flesk">
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!--- PROJECTS SECTION --->
-    <section class="portfolio section" id="projects" aria-label="uma seção mostrando os principais projetos do meu Github.">
-      <div class="max-width" data-aos="fade-down">
-        <h2 class="title">Projetos</h2>
-        <div class="portfolio-container swiper mySwiper">
-          <div class="swiper-wrapper">
-
-            
-            <!-- project 01 -->
-            <div class="portfolio-content swiper-slide">
-              <img src="./src/img/img-projects/projeto_escolheai.png" class="portfolio-img" alt="projeto ">
-              <div>
-               <h3 class="portfolio-title">Escolhe.AI</h3>
-                <p class="portfolio-description">
-                  Uma solução para pessoas que não sabem o que assistir, basta definir os seus gostos (ou não) e deixar que a IA escolha o filme para você.
-                </p>
-                <a href="https://escolhe-ai.netlify.app" target="_blank" class="portfolio-button"> View <i class="uil uil-arrow-right button-icon"></i></a>
-              </div>
-            </div> 
-
-            <!-- project 02 -->
-            <div class="portfolio-content swiper-slide">
-              <img src="./src/img/img-projects/projeto_cardapio.png" class="portfolio-img" alt="projeto ">
-              <div>
-               <h3 class="portfolio-title">Cardápio Online</h3>
-                <p class="portfolio-description">
-                  Uma solução para empresas do ramo alimentício atrair mais clientes, e profissionalisar seu negócio.
-                </p>
-                <a href="https://cardapioon.netlify.app" target="_blank" class="portfolio-button"> View <i class="uil uil-arrow-right button-icon"></i></a>
-              </div>
-            </div> 
-
-            <!-- project 03 -->
-            <div class="portfolio-content swiper-slide">
-              <img src="./src/img/img-projects/projeto_acentuado.png" class="portfolio-img" alt="projeto lista de tarefas">
-              <div>
-               <h3 class="portfolio-title">Jogo de Acentuação</h3>
-                <p class="portfolio-description">
-                  Um jogo educaional para auxiliar no aprendizado do português.
-                </p>
-                <a href="https://acentuado.netlify.app" target="_blank" class="portfolio-button"> View <i class="uil uil-arrow-right button-icon"></i></a>
-              </div>
-            </div>
-
-          </div> 
-
-          <div class="swiper-button-next">
-            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
-          </div>
-          <div class="swiper-button-prev">
-            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
-          </div>
-        </div>
-      </div>
-    </section>
-
-
-    <!--- CONTACT SECTION --->
-    <section class="contact section" id="contact" aria-label="uma seção falando se interessou com o meu trabalho, entrar em contato.">
-      <div class="max-width">
-        <div data-aos="fade-down">
-          <h2 class="title">Contato</h2>
-        </div>
-
-        <div class="contact-content">
-          <div class="column left" data-aos="fade-down">
-            <div class="text">Se Interessou?</div>
-
-            <p>Obrigado por visitar o meu site! Estou imensamente grato pela sua presença. 
-              Se você tiver alguma dúvida, sugestão ou projeto em mente, fique à vontade para entrar em contato. 
-              Estou aqui para ajudar e ansioso para colaborar em projetos incríveis. 
-              Use o formulário ao lado para me enviar uma mensagem. 
-              Vamos transformar suas ideias em realidade juntos! </p>
-
-            <div class="icons">
-              <div class="row">
-                <i class="fas fa-user"></i>
-                <div class="info">
-                  <div class="head">Nome</div>
-                  <div class="sub-title">Guilherme Rodrigues</div>
+                <div class="mouse">
+                    <div class="wheel"></div>
                 </div>
-              </div>
-
-              <div class="row">
-                <i class="fas fa-map-marker-alt"></i>
-                <div class="info">
-                  <div class="head">Endereço</div>
-                  <div class="sub-title">Ernesto Marques da Rocha, Jaguarão</div>
+                <div class="arrow">
+                    <span></span>
                 </div>
-              </div>
-
-              <div class="row">
-                <i class="fas fa-envelope"></i>
-                <div class="info">
-                  <div class="head">Email</div>
-                  <div class="sub-title">guizaumnr@gmail.com</div>
-                </div>
-              </div>
             </div>
-          </div>
+        </section>
 
-           <div class="column right" data-aos="fade-up">
-              <div class="text">Fale comigo</div>
-
-              <form id="meuFormulario" method="POST" action="https://formsubmit.co/76faf660f5808cc45c98a22c5eca2704" class="input-area">
-                <div class="fields">
-                  <div class="field name">
-                    <input type="text" name="nome" placeholder="Nome" required>
-                  </div>
-                  <div class="field email">
-                    <input type="email" name="email" placeholder="Email" required>
-                  </div> 
-                </div> 
-                <div class="field">
-                  <input type="text" name="assunto" placeholder="Assunto" required>
+        <section id="sobre" class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Sobre Mim</h2>
+                    <p class="section-subtitle">Conheça um pouco da minha história e paixão por desenvolvimento</p>
                 </div>
-                <div class="textarea">
-                  <textarea cols="30" rows="10" name="mensagem" placeholder="Mensagem" required></textarea>
+                <div class="about-content">
+                    <div class="about-image">
+                        <img src="src/img/img-content/guilherme-profile.png"Foto de Guilherme trabalhando" />
+                    </div>
+                    <div class="about-text">
+                        <p>
+                            Olá! Sou <strong>Guilherme Rodrigues</strong>, um desenvolvedor Full Stack apaixonado por criar soluções digitais elegantes e funcionais. Com mais de 5 anos de experiência na área, tenho me dedicado a combinar o melhor do desenvolvimento front-end e back-end para entregar projetos que não apenas atendam, mas superem expectativas.
+                        </p>
+                        <p>
+                            Minha jornada na programação começou ainda na adolescência, quando desenvolvi meu primeiro site. Desde então, tenho me aprimorado constantemente e trabalhado com diversas tecnologias e frameworks modernos.
+                        </p>
+                        <h3>Minhas habilidades incluem:</h3>
+                        <div class="skills-container">
+                            <div class="skill-group">
+                                <h4>Front-end</h4>
+                                <div class="skill-list">
+                                    <div class="skill">HTML5</div>
+                                    <div class="skill">CSS3</div>
+                                    <div class="skill">JavaScript</div>
+                                    <div class="skill">React</div>
+                                    <div class="skill">Vue.js</div>
+                                    <div class="skill">Tailwind</div>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <h4>Back-end</h4>
+                                <div class="skill-list">
+                                    <div class="skill">Node.js</div>
+                                    <div class="skill">Express</div>
+                                    <div class="skill">PHP</div>
+                                    <div class="skill">Python</div>
+                                    <div class="skill">Java</div>
+                                    <div class="skill">MySQL</div>
+                                </div>
+                            </div>
+                            <div class="skill-group">
+                                <h4>Ferramentas</h4>
+                                <div class="skill-list">
+                                    <div class="skill">Git</div>
+                                    <div class="skill">Docker</div>
+                                    <div class="skill">Figma</div>
+                                    <div class="skill">AWS</div>
+                                    <div class="skill">CI/CD</div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-primary download-cv">Baixar CV</a>
+                    </div>
                 </div>
-                <div class="button">
-                  <button type="button" onclick="enviarFormulario()">Enviar</button> 
-                </div> 
-                <input type="hidden" name="_subject" value="New submission!">
-              </form>
             </div>
-          </div>
+        </section>
+
+        <section id="projetos" class="projects">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Projetos</h2>
+                    <p class="section-subtitle">Uma seleção dos meus trabalhos mais recentes</p>
+                </div>
+                
+                <div class="project-filter">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="desktop">Desktop</button>
+                    <button class="filter-btn" data-filter="jogos">Jogos</button>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="src/img/img-projects/projeto_cardapio.png" alt="Projeto E-commerce" />
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Cardápio Online</h3>
+                            <p class="project-description">
+                                Uma ferramenta para empresas do ramo alimentício atrair mais clientes e profissionalisar seu negócio.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://cardapioon.netlify.app" class="project-link"><i class="fas fa-external-link-alt"></i> Ver site</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="src/img/img-projects/projeto_escolheai.png" alt="Aplicativo de Fitness" />
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Escolhe.Ai</h3>
+                            <p class="project-description">
+                                Uma solução para pessoas que não sabem o que assistir, basta definir seus gostos (ou não) e deixar que a IA escolha o filme para você.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">Firebase</span>
+                                <span class="tag">Redux</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="escolhe-ai.netlify.app" class="project-link"><i class="fas fa-external-link-alt"></i> Ver demo</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-category="web">
+                        <div class="project-image">
+                            <img src="src/img/img-projects/projeto_biblia365.png" alt="Sistema de Gestão" />
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Bíblia 365</h3>
+                            <p class="project-description">
+                                Site para quem deseja ler a bíblia em um ano de forma organizada, todo dia apresenta automaticamente a parte exata que precisa ser lida.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Angular</span>
+                                <span class="tag">Express</span>
+                                <span class="tag">PostgreSQL</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="biblia365.netlify.app" class="project-link"><i class="fas fa-external-link-alt"></i> Ver site</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-category="jogos" data-category="jogos">
+                        <div class="project-image">
+                            <img src="src/img/img-projects/projeto_acentuado.png" alt="Dashboard Financeiro" />
+                        </div>
+                        <div class="project-info">
+                            <h3 class="project-title">Acentuado</h3>
+                            <p class="project-description">
+                                Um jogo educacional para auxiliar no aprendizado do português.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">D3.js</span>
+                                <span class="tag">Sass</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="acentuado.netlify.app" class="project-link"><i class="fas fa-external-link-alt"></i> Ver site</a>
+                                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="projects-cta">
+                    <a href="#" class="btn btn-secondary">Ver mais projetos</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiencia" class="experience">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Experiência</h2>
+                    <p class="section-subtitle">Minha trajetória profissional e acadêmica</p>
+                </div>
+                
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2023 - Atual</div>
+                        <div class="timeline-content">
+                            <h3>Desenvolvedor Full Stack Sênior</h3>
+                            <h4>TechSolutions Brasil</h4>
+                            <p>
+                                Liderança técnica de equipe no desenvolvimento de aplicações web e mobile de alto desempenho, utilizando React, Node.js e AWS.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">React</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">AWS</span>
+                                <span class="tag">Liderança</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2021 - 2023</div>
+                        <div class="timeline-content">
+                            <h3>Desenvolvedor Full Stack</h3>
+                            <h4>Inovação Digital LTDA</h4>
+                            <p>
+                                Desenvolvimento e manutenção de sistemas web para clientes do setor financeiro, com foco em segurança e performance.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">Vue.js</span>
+                                <span class="tag">PHP</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2019 - 2021</div>
+                        <div class="timeline-content">
+                            <h3>Desenvolvedor Front-end</h3>
+                            <h4>Agência Web Criativa</h4>
+                            <p>
+                                Criação de interfaces responsivas e dinâmicas para diversos clientes, com foco em experiência do usuário e acessibilidade.
+                            </p>
+                            <div class="timeline-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">UI/UX</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">2017 - 2019</div>
+                        <div class="timeline-content">
+                            <h3>Bacharelado em Ciência da Computação</h3>
+                            <h4>Universidade Federal do Brasil</h4>
+                            <p>
+                                Formação completa com ênfase em desenvolvimento de software e inteligência artificial. TCC sobre otimização de desempenho em aplicações web.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Contato</h2>
+                    <p class="section-subtitle">Vamos conversar sobre seu próximo projeto</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Email</h3>
+                                    <p>guizaumnr@gmail.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Telefone</h3>
+                                    <p>+55 (53) 99912-8134</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>Localização</h3>
+                                    <p>Rio Grande do Sul, Brasil</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <a href="https://github.com/GuizaumNR" class="social-link"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/guizaumnr/" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://x.com/guizaumNR" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/gui_snr/" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary submit-btn">
+                                <span class="btn-text">Enviar Mensagem</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">GR.</a>
+                </div>
+                <div class="footer-nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#projetos">Projetos</a></li>
+                        <li><a href="#experiencia">Experiência</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Guilherme Rodrigues. Todos os direitos reservados.</p>
+            </div>
         </div>
-      </div>
-    </section>
-  </main>
+    </footer>
 
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
 
-  <!--- FOOTER --->
-  <footer> 
-    <span>Desenvolvido por <a href="#">Guilherme Rodrigues</a> | <span class="far fa-copyright"></span><span> 2024 todos os direitos reservados</span>
-  </footer>
-
-  <script>
-    function enviarFormulario() {
-      var formulario = document.getElementById('meuFormulario');
-      // Envie o formulário
-      formulario.submit();
-    }
-  </script>
-
-  <!--- SCROLL UP --->
-  <a href="#" class="scrollup" id="scroll-up">
-    <i class="uil uil-arrow-up"></i>
-  </a>
-
-
-  <!--- PARTICLES JS --->
-  <script src="./src/js/particles.js"></script>
-  <script src="./src/js/app-particles.js"></script>
-
-  <!--- SWIPER JS --->
-  <script src="./src/js/swiper-bundle.min.js"></script>
-
-  <!--- MAIN JS --->
-  <script src="./src/js/main.js"></script>
-
-  <!--- SCRIPT ANIMATION --->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-  AOS.init({
-  offset: 400,
-  duration: 1800,
-  });
-  </script>
-
+    <script src="src/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 </body>
 </html>
