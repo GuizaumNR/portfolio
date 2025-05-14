@@ -749,13 +749,14 @@ button {
 
 .timeline-date {
     position: absolute;
-    top: 0;
+    top: -20px;
     left: calc(50% + 40px);
     background-color: var(--secondary-color);
-    color: var(--dark-color);
+    color: var(--bg-light);
     font-weight: 700;
     padding: 0.5rem 1rem;
     border-radius: var(--border-radius-md);
+    z-index: 2;
 }
 
 .timeline-content {
