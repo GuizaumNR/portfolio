@@ -155,8 +155,17 @@
                                 <span class="tag">JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="https://cardapioon.netlify.app" class="project-link"><i class="fas fa-external-link-alt"></i> Ver site</a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                                <a href="" class="project-link open-modal-btn"
+                                    data-title="Cardápio Online"
+                                    data-description="Uma plataforma digital moderna, desenvolvida com foco em acessibilidade e usabilidade, criada para transformar a presença online 
+                                    de restaurantes, lanchonetes, cafés e outros negócios do ramo alimentício.
+                                    Ela oferece uma solução elegante e prática para digitalizar cardápios físicos, 
+                                    fortalecer a identidade da marca no ambiente digital e facilitar o atendimento ao cliente de forma automatizada e eficiente."
+                                    data-images='["/src/img/img-projects/projeto_escolheai_1", "/src/img/img-projects/projeto_escolheai_2", "/src/img/img-projects/projeto_escolheai_3"]'
+                                    data-features='["Interface responsiva e otimizada para dispositivos móveis, ideal para clientes acessarem via celular ou computador.", "Gestão de itens e categorias personalizada, com upload de imagens, descrições, preços e filtros de busca.", "Design visual elegante e limpo, com foco na experiência do usuário e navegação intuitiva.", "Integração simples com WhatsApp para realizar pedidos diretamente, facilitando a comunicação entre cliente e estabelecimento.", "Performance rápida e carregamento leve, garantindo fluidez mesmo em conexões lentas."]'
+                                    data-url="https://cardapioon.netlify.app">
+                                    <i class="fas fa-external-link-alt"></i> Ver mais
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -176,8 +185,14 @@
                                 <span class="tag">API</span>
                             </div>
                             <div class="project-links">
-                                <a href="escolhe-ai.netlify.app" class="project-link"><i class="fas fa-external-link-alt"></i> Ver demo</a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                                <a href="" class="project-link open-modal-btn"
+                                    data-title="Escolhe.Ai"
+                                    data-description="Uma aplicação inovadora que resolve o dilema de 'o que assistir hoje?'. Utilizando inteligência artificial e a API do TMDB, o sistema analisa as preferências do usuário e sugere filmes personalizados. Com uma interface intuitiva, permite definir gêneros favoritos, avaliar sugestões anteriores e descobrir novos conteúdos baseados no seu histórico de gostos."
+                                    data-images='["./src/img/img-projects/projeto_escolheai_1.png", "./src/img/img-projects/projeto_escolheai_2.png", "./src/img/img-projects/projeto_escolheai_3.png"]'
+                                    data-features='["Sugestões personalizadas com IA", "Integração com API do TMDB", "Sistema de avaliação de filmes", "Filtros por gênero e ano", "Interface moderna e intuitiva"]'
+                                    data-url="https://escolhe-ai.netlify.app">
+                                    <i class="fas fa-external-link-alt"></i> Ver mais
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -197,13 +212,12 @@
                                 <span class="tag">JSON</span>
                             </div>
                             <div class="project-links">
-                                <a href="biblia365.netlify.app" class="project-link"><i class="fas fa-external-link-alt"></i> Ver site</a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                                <a href="https://biblia365.netlify.app" class="project-link"><i class="fas fa-external-link-alt"></i> Ver mais</a>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="project-card" data-category="jogos" data-category="jogos">
+                    <div class="project-card" data-category="jogos" data-category="web jogos">
                         <div class="project-image">
                             <img src="src/img/img-projects/projeto_acentuado.png" alt="Dashboard Financeiro" />
                         </div>
@@ -218,8 +232,7 @@
                                 <span class="tag">JavaScript</span>
                             </div>
                             <div class="project-links">
-                                <a href="acentuado.netlify.app" class="project-link"><i class="fas fa-external-link-alt"></i> Ver site</a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i> Código</a>
+                                <a href="https://acentuado.netlify.app" class="project-link"><i class="fas fa-external-link-alt project-link"></i> Ver mais</a>
                             </div>
                         </div>
                     </div>
@@ -232,75 +245,53 @@
             </div>
         </section>
 
-        <section id="experiencia" class="experience">
-            <div class="container">
-                <div class="section-header">
-                    <h2 class="section-title">Experiência</h2>
-                    <p class="section-subtitle">Minha trajetória profissional e acadêmica</p>
+        <!-- Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle" class="modal-title">Título do Projeto</h2>
+                <button id="closeModal" class="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="modal-images">
+                    <div class="image-carousel">
+                        <div id="carouselTrack" class="carousel-track">
+                            <!-- Slides serão inseridos aqui dinamicamente -->
+                        </div>
+                        <button id="prevBtn" class="carousel-nav prev">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <button id="nextBtn" class="carousel-nav next">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                        <div id="carouselIndicators" class="carousel-indicators">
+                            <!-- Indicadores serão inseridos aqui dinamicamente -->
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Abril 2024 - Atual</div>
-                        <div class="timeline-content">
-                            <h3>Suporte Técnico</h3>
-                            <h4>STA TELECOM</h4>
-                            <p>
-                                tendimento ao cliente por telefone, WhatsApp e e-mail, solucionando problemas de conectividade.
-                                Experiência com sistemas operacionais, navegadores e gestão de chamados. Apoio à retenção de clientes e resolução de conflitos.
-                            </p>
-                            <div class="timeline-tags">
-                                <span class="tag">Redes</span>
-                                <span class="tag">Suporte Técnico</span>
-                                <span class="tag">Atendimento ao Cliente</span>
-                            </div>
-                        </div>
+                <div class="modal-info">
+                    <div class="project-tags" id="modalTags">
+                        <!-- Tags serão inseridas aqui dinamicamente -->
                     </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Ago 2021 - Abr 2024</div>
-                        <div class="timeline-content">
-                            <h3>Gerente</h3>
-                            <h4>TotalSul</h4>
-                            <p>
-                                Iniciando como atendente e promovido a gerente, atuei no controle de caixa, gestão de equipe e atendimento ao cliente.
-                                Responsável por estratégias de vendas e operações diárias, com foco em liderança e otimização de processos.
-                            <div class="timeline-tags">
-                                <span class="tag">Gestão</span>
-                                <span class="tag">Liderança</span>
-                                <span class="tag">Atendimento ao Cliente</span>
-                            </div>
-                        </div>
+                    <div id="modalDescription" class="project-description">
+                        Descrição detalhada do projeto...
                     </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Jan 2025 - Atual</div>
-                        <div class="timeline-content">
-                            <h3>Engenharia de Software</h3>
-                            <h4>Estácio</h4>
-                            <p>
-                                Foco em práticas ágeis, engenharia de requisitos, bancos de dados relacionais e não-relacionais, integração de APIs e boas práticas de codificação.
-                            </p>
-                        </div>
+                    <div class="project-features" id="modalFeatures">
+                        <h4>Principais Funcionalidades:</h4>
+                        <ul id="featuresList">
+                            <!-- Funcionalidades serão inseridas aqui dinamicamente -->
+                        </ul>
                     </div>
-                    
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-date">Jan 2018 - Out 2022</div>
-                        <div class="timeline-content">
-                            <h3>Técnico em Informática para Internet</h3>
-                            <h4>IFSUL - Instituto Federal Sul-rio-grandense</h4>
-                            <p>
-                                Formação sólida em linguagens como Java, Python, PHP e JavaScript, com foco em desenvolvimento web e desktop, lógica de programação, estruturas de dados e interfaces responsivas.
-                            </p>
-                        </div>
-                    </div>
+                    <a id="visitSiteBtn" href="#" target="_blank" class="visit-site-btn">
+                        <i class="fas fa-external-link-alt"></i>
+                        Visitar Site
+                    </a>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
 
         <section id="contato" class="contact">
             <div class="container">
